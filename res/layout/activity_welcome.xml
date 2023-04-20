@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="#444444"
+
+    >
+
+    <include layout="@layout/footer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="150dp"
+        android:background="@color/LightGray"
+        android:text="Nothing To Do !!"
+        android:textColor="@color/AppColor"
+        android:textSize="20dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AppColor"
+        app:menu="@menu/menu"
+        app:logo="@drawable/applogo"
+        >
+
+        <Spinner
+            android:id="@+id/List"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbtn"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="690dp"
+        android:backgroundTint="@color/AppColor"
+        android:src="@drawable/floationg_action_button"
+        />
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="85dp"
+        />
+</RelativeLayout>
